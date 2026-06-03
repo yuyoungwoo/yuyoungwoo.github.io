@@ -118,7 +118,24 @@ section{min-height:100vh;display:flex;align-items:center;justify-content:center;
 footer{background:#07071a;text-align:center;padding:2rem;border-top:0.5px solid rgba(255,255,255,0.06)}
 footer p{font-size:13px;color:rgba(255,255,255,0.25)}
 
-.ps{background:#0a0a1a;flex-direction:column;gap:2.5rem}
+.experience{background:#07071a;flex-direction:column;gap:3rem}
+.exp-list{display:flex;flex-direction:column;gap:0;max-width:600px;width:100%;position:relative}
+.exp-list::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:1px;background:rgba(127,119,221,0.2)}
+.exp-item{display:flex;gap:1.5rem;align-items:flex-start;padding:0 0 2.5rem}
+.exp-item:last-child{padding-bottom:0}
+.exp-dot{width:23px;height:23px;border-radius:50%;background:#0a0a1a;border:2px solid #7f77dd;flex-shrink:0;margin-top:3px;position:relative;z-index:1}
+.exp-content{flex:1}
+.exp-period{font-size:12px;color:rgba(127,119,221,0.7);letter-spacing:1px;margin-bottom:.35rem;font-weight:500}
+.exp-company{font-size:20px;font-weight:500;color:#fff;margin-bottom:.25rem}
+.exp-role{font-size:14px;color:rgba(255,255,255,0.45)}
+.awards{background:#0a0a1a;flex-direction:column;gap:2.5rem;min-height:auto;padding:5rem 2rem}
+.award-card{display:flex;align-items:center;gap:1.5rem;background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.1);border-radius:20px;padding:1.75rem 2rem;max-width:600px;width:100%;transition:all .3s}
+.award-card:hover{border-color:rgba(127,119,221,0.5);transform:translateY(-3px)}
+.award-icon{font-size:36px;color:#f0c040;flex-shrink:0}
+.award-name{font-size:18px;font-weight:500;color:#fff;margin-bottom:.3rem}
+.award-field{font-size:13px;color:rgba(255,255,255,0.45)}
+.award-year{margin-left:auto;font-size:13px;color:rgba(127,119,221,0.6);font-weight:500;letter-spacing:1px;flex-shrink:0}
+.ps{background:#07071a;flex-direction:column;gap:2.5rem}
 .ps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:700px;width:100%}
 .ps-card{background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.1);border-radius:16px;padding:1.5rem 1.75rem;display:flex;align-items:center;gap:1.25rem;transition:all .25s}
 .ps-card:hover{border-color:rgba(127,119,221,0.4);transform:translateY(-3px)}
@@ -138,8 +155,10 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25)}
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#experience">Experience</a>
+    <a href="#awards">Awards</a>
     <a href="#ps">PS</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -261,6 +280,54 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25)}
       </div>
     </div>
 
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="fade-up" style="text-align:center">
+    <p class="sec-label">EXPERIENCE</p>
+    <h2 class="sec-title">경력</h2>
+  </div>
+  <div class="exp-list fade-up">
+    <div class="exp-item">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <p class="exp-period">2022 — 2023</p>
+        <h3 class="exp-company">바론코리아</h3>
+        <p class="exp-role">대리</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <p class="exp-period">2021 — 2022</p>
+        <h3 class="exp-company">비주솔루션</h3>
+        <p class="exp-role">연구원</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <p class="exp-period">2020 — 2021</p>
+        <h3 class="exp-company">바론코리아</h3>
+        <p class="exp-role">사원</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="awards" id="awards">
+  <div class="fade-up" style="text-align:center">
+    <p class="sec-label">AWARDS</p>
+    <h2 class="sec-title">수상 내역</h2>
+  </div>
+  <div class="award-card fade-up">
+    <div class="award-icon"><i class="ti ti-trophy" aria-hidden="true"></i></div>
+    <div class="award-info">
+      <p class="award-name">부산 지방 기능 경기대회</p>
+      <p class="award-field">정보기술 분야</p>
+    </div>
+    <div class="award-year">2020</div>
   </div>
 </section>
 
